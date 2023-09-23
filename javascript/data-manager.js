@@ -4,29 +4,26 @@ class DataManager extends LitElement{
 
     static properties = {
         posi: {type: Number},
-        limit: {type: Number},
     }
 
     constructor() {
         super();
         this.posi = 0;
-        
-
     }
 
     updated(changed){
-        debugger
         if(changed.has('posi')){
             this.changeValues()
         }
     }
     getValueButton(){
         this.posi ++;
-    
+        if(this.posi >= 19){
+            this.posi = 0;
+        }
     }
     getValueButtonReturn(){
         this.posi --;
-       
     }
 
     changeValues(){
@@ -35,9 +32,7 @@ class DataManager extends LitElement{
             bubbles: true,
             composed: true,
         });
-       
         this.dispatchEvent(valueData);
-    
     }
 
 }

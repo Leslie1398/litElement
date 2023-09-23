@@ -21,35 +21,38 @@ class Cardcomponent extends LitElement {
             `
         ];
     }
-    render(){
-       
-            return html `
-            <div class="col-lg-4 mx-auto">
-                <div class="card shadow rounded-15">
-                    <div class="card-body">
-                        <img src="${this.elementContent.image}"  alt="" class="w-100 h-100">
+    render() {
+        const elementContentValues = this.elementContent ? Object.values(this.elementContent) : [];
+        const hasValues = elementContentValues.length > 0;
 
-                        <div class="d-flex justify-content-between">
-                            <div>
-                                <span class="fw-bolder d-block">Name</span>
-                                <span class="fw-boldest"></span>
-                            </div>
-                            <div>
-                                <span class="fw-bolder d-block">Age</span>
-                                <span class="fw-boldest"></span>
-                            </div>
-                            <div>
-                                <span class="fw-bolder d-block">Status</span>
-                                <span class="fw-boldest"></span>
+        return html`
+            ${hasValues
+                    ? html`
+                        <div class="col-lg-4 mx-auto">
+                            <div class="card shadow rounded-15">
+                                <div class="card-body">
+                                    <img src="${this.elementContent.image}" alt="" class="w-100 h-100" />
+
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <span class="fw-bolder d-block">Name</span>
+                                            ${this.elementContent.name ? html`<span class="fw-boldest">${this.elementContent.name}</span>` : html``}
+                                        </div>
+                                        <div>
+                                            <span class="fw-bolder d-block">Age</span>
+                                            ${this.elementContent.age ? html`<span class="fw-boldest">${this.elementContent.age}</span>` : html``}
+                                        </div>
+                                        <div>
+                                            <span class="fw-bolder d-block">Status</span>
+                                            ${this.elementContent.status ? html`<span class="fw-boldest">${this.elementContent.status}</span>` : html``}
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-
-        `
-    
-        
+                    `
+                    : ''}
+        `;
     }
 }
 

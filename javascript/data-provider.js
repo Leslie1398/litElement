@@ -12,13 +12,19 @@ class DataProvider extends LitElement{
 
     connectedCallback(){
         super.connectedCallback();
-        this.getData()
+        this.getData();
     }
 
     getData (){
         axios.get('https://rickandmortyapi.com/api/character').then((response) =>{
             this.dataArray = response.data.results;
-        
+            const infoArray = new CustomEvent('array-info',{
+                detail: 0,
+                bubbles: true,
+                composed: true
+            })
+            this.dispatchEvent(infoArray);
+            debugger
         })
     }
 }

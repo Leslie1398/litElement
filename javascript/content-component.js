@@ -12,21 +12,19 @@ class ContentComponent extends LitElement {
             `
         ];
     }
-
-
     render(){
         return html `
         <div class="">
             <card-component></card-component>
             <buttons-component @next-button="${()=> this.changeButtonNext()}" @return-button="${() => this.changeButtonReturn()}"></buttons-component>
-            <data-provider></data-provider>
-            <data-manager @change-value="${this.eventChange}"></data-manager>
+            <data-provider @array-info="${this.eventChange}"></data-provider>
+            <data-manager
+                    @change-value="${this.eventChange}" ></data-manager>
         </div>
         `
     }
 
     changeButtonNext(){
-
         const refDataM = this.shadowRoot.querySelector('data-manager');
         refDataM.getValueButton();
 
@@ -38,8 +36,10 @@ class ContentComponent extends LitElement {
     }
 
     eventChange(event){
+        debugger
         const refDataArray =  this.shadowRoot.querySelector('data-provider');
         const refCardContent = this.shadowRoot.querySelector('card-component');
+
         refCardContent.elementContent = refDataArray.dataArray[event.detail];
         debugger
     }
