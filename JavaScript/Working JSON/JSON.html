@@ -54,25 +54,24 @@ const motherCatNames = catData.map(cat => cat.name);
   }
 
   // Contar el número total de gatitos
-  let totalKittens = 0;
-  let maleKittens = 0;
-  let femaleKittens = 0;
+  let total = 0;
+  let male = 0;
+  let female = 0;
 
   catData.forEach(cat => {
     if (cat.kittens && Array.isArray(cat.kittens)) {
-      totalKittens += cat.kittens.length;
+      total += cat.kittens.length;
       cat.kittens.forEach(kitten => {
         if (kitten.gender === 'm') {
-          maleKittens++;
+          male++;
         } else if (kitten.gender === 'f') {
-          femaleKittens++;
+          female++;
         }
       });
     }
   });
 
-  // Completar la cadena kittenInfo
-  kittenInfo = `${totalKittens} kittens in total (Males: ${maleKittens}, Females: ${femaleKittens}).`;
+  kittenInfo = `${total} kittens in total (Males: ${male}, Females: ${female}).`;
 
 
 
