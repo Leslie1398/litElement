@@ -19,7 +19,9 @@ class MiComponent extends LitElement {
     render (){
         return html`
         <div>
-          <p>Hola, es mi contenido</p>
+              <h1>Hola, ${this.name}!</h1>
+              <p>Contador: ${this.contador}</p>
+              <button @click="${this.incrementar}">Incrementar</button>  
         </div>
       `;
     }
