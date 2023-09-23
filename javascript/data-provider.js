@@ -24,7 +24,7 @@ class DataProvider extends LitElement{
                 composed: true
             })
             this.dispatchEvent(infoArray);
-            debugger
+          
         })
     }
 }
