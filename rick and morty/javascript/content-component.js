@@ -41,6 +41,7 @@ class ContentComponent extends LitElement {
         const refCardContent = this.shadowRoot.querySelector('card-component');
 
         refCardContent.elementContent = refDataArray.dataArray[event.detail];
+        debugger
       
     }
 }

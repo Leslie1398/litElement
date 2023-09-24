@@ -39,8 +39,8 @@ class Cardcomponent extends LitElement {
                                             ${this.elementContent.name ? html`<span class="fw-boldest">${this.elementContent.name}</span>` : html``}
                                         </div>
                                         <div>
-                                            <span class="fw-bolder d-block">Age</span>
-                                            ${this.elementContent.age ? html`<span class="fw-boldest">${this.elementContent.age}</span>` : html``}
+                                            <span class="fw-bolder d-block">Gender</span>
+                                            ${this.elementContent.gender ? html`<span class="fw-boldest">${this.elementContent.gender}</span>` : html``}
                                         </div>
                                         <div>
                                             <span class="fw-bolder d-block">Status</span>
