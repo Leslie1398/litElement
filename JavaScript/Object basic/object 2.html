@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Object basics: Task 2</title>
+    <style>
+      p {
+        color: purple;
+        margin: 0.5em 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+
+    <section class="preview">
+
+
+
+    </section>
+
+  </body>
+  <script>
+const band = {
+  name: 'Piso 21',
+  nationality: 'Colombia',
+  genre: 'Pop',
+  members: 43, 
+  formed: 2007, 
+  split: false,
+  albums: [
+    {
+      name: 'piso 21',
+      released: 2012 
+    },
+    {
+      name: 'ubuntu',
+      released: 2018
+    }
+  ]
+};
+
+
+
+let bandInfo = `${band.name} es una banda de ${band.genre} originaria de ${band.nationality}.`;
+
+if (band.split) {
+  bandInfo += ` Se formaron en ${band.formed} y se separaron en ${band.split}.`;
+} else {
+  bandInfo += ` Se formaron en ${band.formed} y todavía están juntos.`;
+}
+
+bandInfo += ` Han lanzado varios álbumes, incluyendo "${band.albums[0].name}" en ${band.albums[0].released} y "${band.albums[1].name}" en ${band.albums[1].released}.`;
+
+
+
+    // Don't edit the code below here!
+
+    const section = document.querySelector('section');
+    let para1 = document.createElement('p');
+    para1.textContent = bandInfo;
+    section.appendChild(para1);
+  </script>
+
+</html>
