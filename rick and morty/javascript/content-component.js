@@ -44,6 +44,7 @@ class ContentComponent extends LitElement {
         debugger
       
     }
+
 }
 
 customElements.define('content-component', ContentComponent);
