@@ -12,14 +12,14 @@ class MiComponent extends LitElement {
 
     constructor() {
         super();
-        this.nombre = 'John Doe';
+        this.nombre = 'Leslie';
         this.contador = 0;
     }
 
     render (){
         return html`
         <div>
-              <h1>Hola, ${this.name}!</h1>
+              <h1>Hola, ${this.nombre}!</h1>
               <p>Contador: ${this.contador}</p>
               <button @click="${this.incrementar}">Incrementar</button>  
         </div>

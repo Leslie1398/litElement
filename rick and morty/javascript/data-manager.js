@@ -21,9 +21,14 @@ class DataManager extends LitElement{
         if(this.posi >= 19){
             this.posi = 0;
         }
+
+       
     }
     getValueButtonReturn(){
         this.posi --;
+        if(this.posi === 0 || this.posi === -1) {
+            this.posi = 19;
+        }
     }
 
     changeValues(){
