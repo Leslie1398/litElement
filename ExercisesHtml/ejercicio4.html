@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="description" content="Descripcion de mi pagina">
+    <meta name="title" content="Mi pagina1"></meta>
+    <title>Leslie Veloz</title>
+
+</head>
+<body>
+
+    <form>
+        <section>
+            <p>Detalist</p>
+            <fieldset>
+                <label for="inputLista">Lista de colores</label>
+                <input list="listacolores">
+                <datalist id="listacolores">
+                    <option value="Azul"></option>
+                    <option value="Rojo"></option>
+                    <option value="Amarillo"></option>
+                    <option value="Negro"></option>
+                    <option value="Rosa"></option>
+                    <option value="Blanco"></option>
+                </datalist>
+            </fieldset>
+        </section>
+        <section>
+           <p>Url input</p>
+           <fieldset>
+            <label for="url">Lista urls</label>
+            <input type="url" name="url" id="url" placeholder="https://example.com" pattern="https//.+" size="30"
+            list="listaurls" required>
+            <datalist id="listaurls">
+                <option value="https//www.google.com" label="by google"></option>
+                <option value="https://wwww.msn.com" label="by es"></option>
+            </datalist>
+            </fieldset> 
+        </section>
+        <section>
+            <p>Range</p>
+            <fieldset>
+                <label for="range">Rangos</label>
+                <input type="range" list="listaurls" step="1" name="range" max="6" min="0">
+                <datalist>
+                    <option value="0" label="cero"></option>
+                    <option value="1" label="uno"></option>
+                    <option value="2" label="dos"></option>
+                    <option value="3" label="tre"></option>
+                    <option value="4" label="cuatro"></option>
+                    <option value="5" label="cinco"></option>
+                </datalist>
+            </fieldset>
+        </section>
+        <br>
+        <input type="submit" name="btn-enviar" value="Enviar">
+        <input type="reset" name="btn-limpiar" value="Limpiar"> 
+    </form>
+
+</body>
+</html>
+
+ 

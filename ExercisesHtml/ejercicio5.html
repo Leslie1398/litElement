@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="description" content="Descripcion de mi pagina">
+    <meta name="title" content="Mi pagina1"></meta>
+    <title>Leslie Veloz</title>
+</head>
+<body>
+
+    <form>
+        <section>
+            <p>Text input</p>
+            <fieldset>
+                <label for="texto">Ingresar texto</label>
+                <input type="text" id="texto" placeholder="Ingresar texto">
+            </fieldset>
+        </section>
+
+        <section>
+            <p>Password input</p>
+            <fieldset>
+                <label for="contraseña">Ingresar Password</label>
+                <input type="password" id="contraseña" placeholder="Ingresar paswoord">
+            </fieldset>
+        </section>
+
+        <section>
+            <p>Telefono input</p>
+            <fieldset>
+                <label for="telefono">Ingresar telefono</label>
+                <input type="tel" id="telefono" placeholder="Ingresar password">
+            </fieldset>
+        </section>
+        <section>
+            <p>Detalits</p>
+            <fieldset>
+                <label for="listacolores">Lista de colores</label>
+                <input type="url" name="url" id="url" placeholder="https://example.com" pattern="https//.+" size="30"
+                list="listaurls" required>
+                <datalist id="listaurls">
+                    <option value="https://www.google.com" label="by google"></option>
+                    <option value="https://www.msn.com" label="by es"></option>
+                </datalist>
+            </fieldset>
+        </section>
+        <section>
+            <p>Range</p>
+            <fieldset>
+                <label for="range">Rangos</label>
+                <input type="range" list="listaurls" step="1" name="range" max="6" min="0"> 
+                <datalist>
+                    <option value="0" label="cero"></option>
+                    <option value="1" label="uno"></option>
+                    <option value="2" label="dos"></option>
+                    <option" value="3" label="tres"></option>
+                </datalist>
+               
+            </fieldset>
+        </section>
+        <section>
+            <p>Files</p>
+            <fieldset>
+                <label for="archivo">Selecciona un archivo</label>
+                <input type="file" id="archivo" multiple="multiple" value="">
+            </fieldset>
+        </section>
+        <section>
+            <p>CheckBox</p>
+            <fieldset>
+                <label for="multiple">Selecciona varios</label>
+                <br>
+                <label for="opcion1">Opcion 1</label>
+                <input type="checkbox" id="opcion1" checked>
+                <label for="opcion2">Opcion 2</label>
+                <input type="checkbox" id="opcion2" checked>
+                <label for="opcion3">Opcion 3</label>
+                <input type="checkbox" id="opcion3" checked>
+            </fieldset>
+        </section>
+        <section>
+            <p>Radio Button</p>
+            <fieldset>
+                <label for="opciones"></label>
+                <br>
+                <label for="opc1">Opcion 1</label>
+                <input type="radio" id="opc1" name="clase">
+                <label for="opc2">Opcion 2</label>
+                <input type="radio" id="opc2" name="clase">
+                <label for="opc3">Opcion 3</label>
+                <input type="radio" id="opc3" name="clase">
+            </fieldset>
+        </section>
+        <section>
+            <p>Color</p>
+            <fieldset>
+                <label for="colores">Seleccione un color</label>
+                <input type="color" id="colores" name="colores" value="FFFFFF">
+            </fieldset>
+        </section>
+        <section>
+            <p>Data-time</p>
+            <fieldset>
+                <label for="fechahora">Seleccionar fecha y hora</label>
+                <input type="datetime-local" id="fechahora" name="fechahora">
+            </fieldset>
+        </section>
+        <section>
+            <p>Time</p>
+            <fieldset>
+                <label for="fechahora">Selecciona la hora</label>
+                <input type="time" id="hora" name="hora">
+            </fieldset>
+        </section>
+        <section>
+            <p>TextArea</p>
+            <fieldset>
+                <label for="textogrande">Ingresar texto</label>
+                <textarea name="textogrande" id="textogrande" cols="30" rows="10"></textarea>
+            </fieldset>
+        </section>
+        <br>
+        <input type="submit" name="btn-enviar" value="Enviar">
+        <input type="reset" name="btn-limpiar" value="Limpiar">
+
+    </form>
+
+</body>
+</html>
+
+ 

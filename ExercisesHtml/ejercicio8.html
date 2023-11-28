@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leslie Veloz</title>
+</head>
+<body>
+    <header>Ejercicio 8 - Leslie Veloz</header>
+    <section>
+        <form id="formulario">
+            <p>Datos personales</p>
+            <fieldset>
+                <label for="nombre">Nombre:</label>
+                <input type="number" name="nombre" id="nombre" size="30">
+                <br>
+                <label for="edad">Edad:</label>
+                <input type="number" name="edad" id="edad">
+            </fieldset>
+            <p>Cultura general</p>
+            <fieldset>
+                <label for="capital">Capital Noruega</label>
+                <br>
+                <label for="copenhage">Copenhage</label>
+                <input type="radio" name="capital" id="copenhage">
+                <label for="helsinki">Helsinki</label>
+                <input type="radio" name="capital" id="helsinki">
+                <label for="oslo">Oslo</label>
+                <input type="radio" name="capital" id="oslo">
+            </fieldset>
+            <br>
+            <input type="submit" name="btn-enviar" value="Enviar">
+            <input type="reset" name="btn-limpiar" value="Borrar">
+        
+        </form>
+    </section>
+    <section>
+        <h1>HTML Number input</h1>
+        <h3>
+            <ul>Ejemplo 1</ul>
+        </h3>
+        <form>
+            <label for="edad2">Ingresa tu edad </label>
+            <input type="number" name="edad2" id="edad2">
+            <input type="submit" name="btn-enviar" value="Enviar" id="enviar">
+        </form>
+        <br>
+        <h3>
+            <ul>Ejemplo 2</ul>
+        </h3>
+        <form>
+            <label for="edad3">Ingresa tu edad (18-99)</label>
+            <input type="number" name="edad3" id="edad3">
+            <input type="submit" name="btn-enviar" value="Enviar" id="enviar3">
+        </form>
+        <br>
+        <h3>
+            <ul>Ejemplo 3</ul>
+        </h3>
+        <form>
+            <label for="edad3">Ingresa tu edad (18-99)</label>
+            <input type="number" name="edad4" style="width: 50px;" size="5" id="edad4" required min="18" max="99">
+            <input type="submit" name="btn-enviar" value="Enviar" id="enviar4">
+        </form>
+    </section>
+    <br>
+    <section>
+        <fieldset>
+            <p onclick="this.style.color='red'">Este parrafo</p>
+        </fieldset>
+        <fieldset>
+            <p ondblclick="this.style.color='red'">Este parrafo</p>
+        </fieldset>
+        <fieldset>
+            <p onmouseup="this.style.color='red'">Este parrafo</p>
+        </fieldset>
+        <fieldset>
+            <p onmousedown="this.style.color='red'">Este parrafo</p>
+        </fieldset>
+    </section>
+</body>
+</html>
