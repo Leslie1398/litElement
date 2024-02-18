@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leslie Veloz</title>
+</head>
+<style>
+    table, td{
+        border: 1px solid black;
+    }
+</style>
+<body>
+    <header>
+        <h1>Ejercicio 9 - Leslie Veloz</h1>
+        <h3>Informacion sobre el pedido</h3>
+    </header>
+    <section>
+        <p>Datos basicos</p>
+        <fieldset>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre">
+            <br>
+            <label for="descripcion">Descripcion</label>
+            <textarea name="descripcion" id="descripcion" cols="50" rows="7"></textarea>
+            <br>
+            <label for="archivo">Foto</label>
+            <input type="file" id="archivo" value="">
+            <br>
+            <input type="checkbox" id="opcion1">
+            <label for="opcion1">Añadir contador de visitas</label>
+        </fieldset>
+        <p>Datos economicos</p>
+        <fieldset>
+            <label for="precio">Precio</label>
+            <input type="number"><span>&euro; &nbsp;</span>
+            <label for="precio">Impuesto</label>
+            <input type="number" style="width: 50px;"><span>%</span>
+            <label for="opciones"></label>
+        </fieldset>
+        <fieldset>
+            <br>
+            <label>Promocion</label>
+            <br>
+            <input type="radio" id="opc1" name="clase">
+            <label for="ninguno">Ninguno</label>
+            <input type="radio" id="opc1" name="clase">
+            <label for="transporte">Transporte gratuito</label>
+            <input type="radio" name="clase" id="opc1">
+            <label for="descuento">Descuento</label>
+        </fieldset>
+    </section>
+    <br>
+    <table id="table" data-years="5" data-products="100" data-name="productos ABD" data-title="Analisis de ventas anuales">
+        <thead>
+            <tr>
+                <th rowspan="2">Año</th>
+            </tr>
+            <tr>
+                <th>
+                    <tr>Expancion de Ventas</tr>
+                    <tr>
+                        <th>Producto A</th>
+                        <th>Producto B</th>
+                        <th>Producto C</th>
+                        <th>Producto D</th>
+                    </tr>
+                </th>
+            </tr>
+            
+        </thead>
+        <tbody>
+            <tr>
+                <td>N-3</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
